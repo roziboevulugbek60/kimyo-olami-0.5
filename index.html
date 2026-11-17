@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CHEMISTRY 3D - Formula Master</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="background">
+    <div class="orb orb1"></div>
+    <div class="orb orb2"></div>
+    <div class="orb orb3"></div>
+  </div>
+
+  <header>
+    <div class="logo">
+      <span class="logo-icon">⚗️</span>
+      <div>
+        <h1>CHEMISTRY <span>3D</span></h1>
+        <p>FORMULA MASTER</p>
+      </div>
+    </div>
+
+    <div class="header-stats">
+      <div class="stat">
+        <small>BALL</small>
+        <strong id="score">0</strong>
+      </div>
+      <div class="stat">
+        <small>REKORD</small>
+        <strong id="record">0</strong>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="game-card">
+
+      <div class="game-top">
+        <div>
+          <span class="level-label" id="level">1-DARAJA</span>
+          <h2 id="levelName">Boshlang‘ich kimyogar</h2>
+        </div>
+
+        <div class="timer-box">
+          <span>⏱️</span>
+          <strong id="timer">35</strong>
+          <small>SEKUND</small>
+        </div>
+      </div>
+
+      <div class="progress-area">
+        <div class="progress-info">
+          <span>Bosqich jarayoni</span>
+          <span id="progressText">1 / 4</span>
+        </div>
+        <div class="progress-bar">
+          <div id="progressFill"></div>
+        </div>
+      </div>
+
+      <div id="gameArea">
+        <div class="question-box">
+          <div class="molecule-icon">🧬</div>
+          <p class="question-label">TOPSHIRIQ</p>
+          <h2 id="question">Suv formulasini tuzing</h2>
+          <p id="description">Vodorod va kislorod elementlaridan foydalaning.</p>
+        </div>
+
+        <div class="formula-section">
+          <p class="section-label">SIZNING FORMULANGIZ</p>
+
+          <div class="formula-display" id="formulaDisplay">
+            <span class="placeholder">Elementlarni tanlang...</span>
+          </div>
+
+          <div class="formula-actions">
+            <button class="secondary-btn" id="backspaceBtn">⌫ O‘chirish</button>
+            <button class="secondary-btn" id="clearBtn">✕ Tozalash</button>
+          </div>
+        </div>
+
+        <div class="elements-section">
+          <p class="section-label">ELEMENTLARNI TANLANG</p>
+          <div class="elements-grid" id="elementsGrid"></div>
+
+          <p class="section-label number-title">PASTKI INDEKSLAR</p>
+          <div class="numbers-grid" id="numbersGrid"></div>
+        </div>
+
+        <button class="check-btn" id="checkBtn">
+          FORMULANI TEKSHIRISH <span>➜</span>
+        </button>
+
+        <div id="feedback" class="feedback hidden"></div>
+        <button class="next-btn hidden" id="nextBtn">KEYINGI TOPSHIRIQ ➜</button>
+      </div>
+
+      <div id="finishScreen" class="finish-screen hidden">
+        <div class="finish-icon">🏆</div>
+        <h2>Tabriklaymiz!</h2>
+        <p id="finishMessage">Siz barcha bosqichlarni yakunladingiz!</p>
+        <div class="finish-score">
+          <span>JAMI BALL</span>
+          <strong id="finalScore">0</strong>
+        </div>
+        <button class="check-btn" id="restartBtn">QAYTA O‘YNASH ↻</button>
+      </div>
+
+    </section>
+
+    <section class="bottom-info">
+      <div class="info-card">
+        <span>🧪</span>
+        <div>
+          <strong>12 ta topshiriq</strong>
+          <small>Kimyoviy formulalar</small>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <span>⭐</span>
+        <div>
+          <strong>Ball yig‘ing</strong>
+          <small>To‘g‘ri javob uchun</small>
+        </div>
+      </div>
+
+      <div class="info-card">
+        <span>🔓</span>
+        <div>
+          <strong>3 ta daraja</strong>
+          <small>Yangi bosqichlarni oching</small>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      CHEMISTRY 3D <span>•</span> FORMULA MASTER
+    </footer>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
